@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ddSlick simple Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="jquery.ddslick.js"></script>
+    
+    
+    
+  </head>
+
+  <body>
+  
+
+
+    <div class="demo-content">
+        <div class="demo-live">
+        <select id="demo-htmlselect">
+        <option value="0" data-imagesrc="https://i.imgur.com/XkuTj3B.png" data-description="Description with Facebook">Facebook</option>
+        <option value="1" data-imagesrc="https://i.imgur.com/8ScLNnk.png" data-description="Description with Twitter">Twitter</option>
+        <option value="2" data-imagesrc="https://i.imgur.com/aDNdibj.png" data-description="Description with LinkedIn">LinkedIn</option>
+        <option value="3" data-imagesrc="https://i.imgur.com/kFAk2DX.png" data-description="Description with Foursquare">Foursquare</option>
+        </select>
+        <div class="spacer"></div>
+        <button id="make-it-slick"> Make it slick! </button>
+        <button id="restore"> Restore to Original </button>
+        </div>
+    </div>
+                        
+    <hr>
+    
+    <div class="demo-content">
+        <div class="demo-live">
+<select id="country" name="country">
+    <option>select country</option>
+    <option value="AF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/af.svg" data-description="Description for Afghanistan">Afghanistan</option>
+    <option value="AX" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ax.svg" data-description="Description for Aland Islands">Aland Islands</option>
+    <option value="AL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/al.svg" data-description="Description for Albania">Albania</option>
+    <option value="DZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/dz.svg" data-description="Description for Algeria">Algeria</option>
+    <option value="AS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/as.svg" data-description="Description for American Samoa">American Samoa</option>
+    <option value="AD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ad.svg" data-description="Description for Andorra">Andorra</option>
+    <option value="AO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ao.svg" data-description="Description for Angola">Angola</option>
+    <option value="AI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ai.svg" data-description="Description for Anguilla">Anguilla</option>
+    <option value="AQ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/aq.svg" data-description="Description for Antarctica">Antarctica</option>
+    <option value="AG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ag.svg" data-description="Description for Antigua and Barbuda">Antigua and Barbuda</option>
+    <option value="AR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ar.svg" data-description="Description for Argentina">Argentina</option>
+    <option value="AM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/am.svg" data-description="Description for Armenia">Armenia</option>
+    <option value="AW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/aw.svg" data-description="Description for Aruba">Aruba</option>
+    <option value="AU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/au.svg" data-description="Description for Australia">Australia</option>
+    <option value="AT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/at.svg" data-description="Description for Austria">Austria</option>
+    <option value="AZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/az.svg" data-description="Description for Azerbaijan">Azerbaijan</option>
+    <option value="BS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bs.svg" data-description="Description for Bahamas">Bahamas</option>
+    <option value="BH"   data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bh.svg" data-description="Description for Bahrain">Bahrain</option>
+    <option value="BD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bd.svg" data-description="Description for Bangladesh">Bangladesh</option>
+    <option value="BB" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bb.svg" data-description="Description for Barbados">Barbados</option>
+    <option value="BY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/by.svg" data-description="Description for Belarus">Belarus</option>
+    <option value="BE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/be.svg" data-description="Description for Belgium">Belgium</option>
+    <option value="BZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bz.svg" data-description="Description for Belize">Belize</option>
+    <option value="BJ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bj.svg" data-description="Description for Benin">Benin</option>
+    <option value="BM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bm.svg" data-description="Description for Bermuda">Bermuda</option>
+    <option value="BT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bt.svg" data-description="Description for Bhutan">Bhutan</option>
+    <option value="BO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bo.svg" data-description="Description for Bolivia">Bolivia</option>
+    <option value="BQ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bq.svg" data-description="Description for Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+    <option value="BA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ba.svg" data-description="Description for Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+    <option value="BW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bw.svg" data-description="Description for Botswana">Botswana</option>
+    <option value="BV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bv.svg" data-description="Description for Bouvet Island">Bouvet Island</option>
+    <option value="BR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/br.svg" data-description="Description for Brazil">Brazil</option>
+    <option value="IO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/io.svg" data-description="Description for British Indian Ocean Territory">British Indian Ocean Territory</option>
+    <option value="BN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bn.svg" data-description="Description for Brunei Darussalam">Brunei Darussalam</option>
+    <option value="BG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bg.svg" data-description="Description for Bulgaria">Bulgaria</option>
+    <option value="BF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bf.svg" data-description="Description for Burkina Faso">Burkina Faso</option>
+    <option value="BI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bi.svg" data-description="Description for Burundi">Burundi</option>
+    <option value="KH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kh.svg" data-description="Description for Cambodia">Cambodia</option>
+    <option value="CM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cm.svg" data-description="Description for Cameroon">Cameroon</option>
+    <option value="CA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ca.svg" data-description="Description for Canada">Canada</option>
+    <option value="CV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cv.svg" data-description="Description for Cape Verde">Cape Verde</option>
+    <option value="KY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ky.svg" data-description="Description for Cayman Islands">Cayman Islands</option>
+    <option value="CF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cf.svg" data-description="Description for Central African Republic">Central African Republic</option>
+    <option value="TD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/td.svg" data-description="Description for Chad">Chad</option>
+    <option value="CL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cl.svg" data-description="Description for Chile">Chile</option>
+    <option value="CN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cn.svg" data-description="Description for China">China</option>
+    <option value="CX" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cx.svg" data-description="Description for Christmas Island">Christmas Island</option>
+    <option value="CC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cc.svg" data-description="Description for Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+    <option value="CO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/co.svg" data-description="Description for Colombia">Colombia</option>
+    <option value="KM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/km.svg" data-description="Description for Comoros">Comoros</option>
+    <option value="CG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cg.svg" data-description="Description for Congo">Congo</option>
+    <option value="CD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cd.svg" data-description="Description for Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+    <option value="CK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ck.svg" data-description="Description for Cook Islands">Cook Islands</option>
+    <option value="CR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cr.svg" data-description="Description for Costa Rica">Costa Rica</option>
+    <option value="CI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ci.svg" data-description="Description for Cote D'Ivoire">Cote D'Ivoire</option>
+    <option value="HR" selected="selected"  data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/hr.svg" data-description="Description for Croatia">Croatia</option>
+    <option value="CU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cu.svg" data-description="Description for Cuba">Cuba</option>
+    <option value="CW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cw.svg" data-description="Description for Curacao">Curacao</option>
+    <option value="CY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cy.svg" data-description="Description for Cyprus">Cyprus</option>
+    <option value="CZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/cz.svg" data-description="Description for Czech Republic">Czech Republic</option>
+    <option value="DK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/dk.svg" data-description="Description for Denmark">Denmark</option>
+    <option value="DJ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/dj.svg" data-description="Description for Djibouti">Djibouti</option>
+    <option value="DM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/dm.svg" data-description="Description for Dominica">Dominica</option>
+    <option value="DO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/do.svg" data-description="Description for Dominican Republic">Dominican Republic</option>
+    <option value="EC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ec.svg" data-description="Description for Ecuador">Ecuador</option>
+    <option value="EG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/eg.svg" data-description="Description for Egypt">Egypt</option>
+    <option value="SV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sv.svg" data-description="Description for El Salvador">El Salvador</option>
+    <option value="GQ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gq.svg" data-description="Description for Equatorial Guinea">Equatorial Guinea</option>
+    <option value="ER" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/er.svg" data-description="Description for Eritrea">Eritrea</option>
+    <option value="EE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ee.svg" data-description="Description for Estonia">Estonia</option>
+    <option value="ET" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/et.svg" data-description="Description for Ethiopia">Ethiopia</option>
+    <option value="FK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fk.svg" data-description="Description for Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+    <option value="FO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fo.svg" data-description="Description for Faroe Islands">Faroe Islands</option>
+    <option value="FJ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fj.svg" data-description="Description for Fiji">Fiji</option>
+    <option value="FI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fi.svg" data-description="Description for Finland">Finland</option>
+    <option value="FR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fr.svg" data-description="Description for France">France</option>
+    <option value="GF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gf.svg" data-description="Description for French Guiana">French Guiana</option>
+    <option value="PF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pf.svg" data-description="Description for French Polynesia">French Polynesia</option>
+    <option value="TF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tf.svg" data-description="Description for French Southern Territories">French Southern Territories</option>
+    <option value="GA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ga.svg" data-description="Description for Gabon">Gabon</option>
+    <option value="GM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gm.svg" data-description="Description for Gambia">Gambia</option>
+    <option value="GE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ge.svg" data-description="Description for Georgia">Georgia</option>
+    <option value="DE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/de.svg" data-description="Description for Germany">Germany</option>
+    <option value="GH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gh.svg" data-description="Description for Ghana">Ghana</option>
+    <option value="GI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gi.svg" data-description="Description for Gibraltar">Gibraltar</option>
+    <option value="GR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gr.svg" data-description="Description for Greece">Greece</option>
+    <option value="GL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gl.svg" data-description="Description for Greenland">Greenland</option>
+    <option value="GD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gd.svg" data-description="Description for Grenada">Grenada</option>
+    <option value="GP" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gp.svg" data-description="Description for Guadeloupe">Guadeloupe</option>
+    <option value="GU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gu.svg" data-description="Description for Guam">Guam</option>
+    <option value="GT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gt.svg" data-description="Description for Guatemala">Guatemala</option>
+    <option value="GG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gg.svg" data-description="Description for Guernsey">Guernsey</option>
+    <option value="GN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gn.svg" data-description="Description for Guinea">Guinea</option>
+    <option value="GW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gw.svg" data-description="Description for Guinea-Bissau">Guinea-Bissau</option>
+    <option value="GY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gy.svg" data-description="Description for Guyana">Guyana</option>
+    <option value="HT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ht.svg" data-description="Description for Haiti">Haiti</option>
+    <option value="HM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/hm.svg" data-description="Description for Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+    <option value="VA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/va.svg" data-description="Description for Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+    <option value="HN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/hn.svg" data-description="Description for Honduras">Honduras</option>
+    <option value="HK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/hk.svg" data-description="Description for Hong Kong">Hong Kong</option>
+    <option value="HU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/hu.svg" data-description="Description for Hungary">Hungary</option>
+    <option value="IS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/is.svg" data-description="Description for Iceland">Iceland</option>
+    <option value="IN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/in.svg" data-description="Description for India">India</option>
+    <option value="ID" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/id.svg" data-description="Description for Indonesia">Indonesia</option>
+    <option value="IR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ir.svg" data-description="Description for Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+    <option value="IQ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/iq.svg" data-description="Description for Iraq">Iraq</option>
+    <option value="IE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ie.svg" data-description="Description for Ireland">Ireland</option>
+    <option value="IM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/im.svg" data-description="Description for Isle of Man">Isle of Man</option>
+    <option value="IL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/il.svg" data-description="Description for Israel">Israel</option>
+    <option value="IT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/it.svg" data-description="Description for Italy">Italy</option>
+    <option value="JM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/jm.svg" data-description="Description for Jamaica">Jamaica</option>
+    <option value="JP" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/jp.svg" data-description="Description for Japan">Japan</option>
+    <option value="JE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/je.svg" data-description="Description for Jersey">Jersey</option>
+    <option value="JO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/jo.svg" data-description="Description for Jordan">Jordan</option>
+    <option value="KZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kz.svg" data-description="Description for Kazakhstan">Kazakhstan</option>
+    <option value="KE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ke.svg" data-description="Description for Kenya">Kenya</option>
+    <option value="KI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ki.svg" data-description="Description for Kiribati">Kiribati</option>
+    <option value="KP" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kp.svg" data-description="Description for Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+    <option value="KR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kr.svg" data-description="Description for Korea, Republic of">Korea, Republic of</option>
+    <option value="XK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/xk.svg" data-description="Description for Kosovo">Kosovo</option>
+    <option value="KW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kw.svg" data-description="Description for Kuwait">Kuwait</option>
+    <option value="KG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kg.svg" data-description="Description for Kyrgyzstan">Kyrgyzstan</option>
+    <option value="LA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/la.svg" data-description="Description for Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+    <option value="LV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lv.svg" data-description="Description for Latvia">Latvia</option>
+    <option value="LB" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lb.svg" data-description="Description for Lebanon">Lebanon</option>
+    <option value="LS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ls.svg" data-description="Description for Lesotho">Lesotho</option>
+    <option value="LR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lr.svg" data-description="Description for Liberia">Liberia</option>
+    <option value="LY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ly.svg" data-description="Description for Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+    <option value="LI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/li.svg" data-description="Description for Liechtenstein">Liechtenstein</option>
+    <option value="LT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lt.svg" data-description="Description for Lithuania">Lithuania</option>
+    <option value="LU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lu.svg" data-description="Description for Luxembourg">Luxembourg</option>
+    <option value="MO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mo.svg" data-description="Description for Macao">Macao</option>
+    <option value="MK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mk.svg" data-description="Description for Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option>
+    <option value="MG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mg.svg" data-description="Description for Madagascar">Madagascar</option>
+    <option value="MW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mw.svg" data-description="Description for Malawi">Malawi</option>
+    <option value="MY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/my.svg" data-description="Description for Malaysia">Malaysia</option>
+    <option value="MV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mv.svg" data-description="Description for Maldives">Maldives</option>
+    <option value="ML" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ml.svg" data-description="Description for Mali">Mali</option>
+    <option value="MT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mt.svg" data-description="Description for Malta">Malta</option>
+    <option value="MH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mh.svg" data-description="Description for Marshall Islands">Marshall Islands</option>
+    <option value="MQ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mq.svg" data-description="Description for Martinique">Martinique</option>
+    <option value="MR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mr.svg" data-description="Description for Mauritania">Mauritania</option>
+    <option value="MU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mu.svg" data-description="Description for Mauritius">Mauritius</option>
+    <option value="YT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/yt.svg" data-description="Description for Mayotte">Mayotte</option>
+    <option value="MX" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mx.svg" data-description="Description for Mexico">Mexico</option>
+    <option value="FM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/fm.svg" data-description="Description for Micronesia, Federated States of">Micronesia, Federated States of</option>
+    <option value="MD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/md.svg" data-description="Description for Moldova, Republic of">Moldova, Republic of</option>
+    <option value="MC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mc.svg" data-description="Description for Monaco">Monaco</option>
+    <option value="MN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mn.svg" data-description="Description for Mongolia">Mongolia</option>
+    <option value="ME" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/me.svg" data-description="Description for Montenegro">Montenegro</option>
+    <option value="MS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ms.svg" data-description="Description for Montserrat">Montserrat</option>
+    <option value="MA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ma.svg" data-description="Description for Morocco">Morocco</option>
+    <option value="MZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mz.svg" data-description="Description for Mozambique">Mozambique</option>
+    <option value="MM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mm.svg" data-description="Description for Myanmar">Myanmar</option>
+    <option value="NA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/na.svg" data-description="Description for Namibia">Namibia</option>
+    <option value="NR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nr.svg" data-description="Description for Nauru">Nauru</option>
+    <option value="NP" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/np.svg" data-description="Description for Nepal">Nepal</option>
+    <option value="NL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nl.svg" data-description="Description for Netherlands">Netherlands</option>
+    <option value="NC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nc.svg" data-description="Description for New Caledonia">New Caledonia</option>
+    <option value="NZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nz.svg" data-description="Description for New Zealand">New Zealand</option>
+    <option value="NI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ni.svg" data-description="Description for Nicaragua">Nicaragua</option>
+    <option value="NE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ne.svg" data-description="Description for Niger">Niger</option>
+    <option value="NG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ng.svg" data-description="Description for Nigeria">Nigeria</option>
+    <option value="NU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nu.svg" data-description="Description for Niue">Niue</option>
+    <option value="NF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/nf.svg" data-description="Description for Norfolk Island">Norfolk Island</option>
+    <option value="MP" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mp.svg" data-description="Description for Northern Mariana Islands">Northern Mariana Islands</option>
+    <option value="NO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/no.svg" data-description="Description for Norway">Norway</option>
+    <option value="OM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/om.svg" data-description="Description for Oman">Oman</option>
+    <option value="PK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pk.svg" data-description="Description for Pakistan">Pakistan</option>
+    <option value="PW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pw.svg" data-description="Description for Palau">Palau</option>
+    <option value="PS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ps.svg" data-description="Description for Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+    <option value="PA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pa.svg" data-description="Description for Panama">Panama</option>
+    <option value="PG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pg.svg" data-description="Description for Papua New Guinea">Papua New Guinea</option>
+    <option value="PY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/py.svg" data-description="Description for Paraguay">Paraguay</option>
+    <option value="PE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pe.svg" data-description="Description for Peru">Peru</option>
+    <option value="PH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ph.svg" data-description="Description for Philippines">Philippines</option>
+    <option value="PN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pn.svg" data-description="Description for Pitcairn">Pitcairn</option>
+    <option value="PL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pl.svg" data-description="Description for Poland">Poland</option>
+    <option value="PT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pt.svg" data-description="Description for Portugal">Portugal</option>
+    <option value="PR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pr.svg" data-description="Description for Puerto Rico">Puerto Rico</option>
+    <option value="QA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/qa.svg" data-description="Description for Qatar">Qatar</option>
+    <option value="RE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/re.svg" data-description="Description for Reunion">Reunion</option>
+    <option value="RO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ro.svg" data-description="Description for Romania">Romania</option>
+    <option value="RU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ru.svg" data-description="Description for Russian Federation">Russian Federation</option>
+    <option value="RW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/rw.svg" data-description="Description for Rwanda">Rwanda</option>
+    <option value="BL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/bl.svg" data-description="Description for Saint Barthelemy">Saint Barthelemy</option>
+    <option value="SH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sh.svg" data-description="Description for Saint Helena">Saint Helena</option>
+    <option value="KN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/kn.svg" data-description="Description for Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+    <option value="LC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lc.svg" data-description="Description for Saint Lucia">Saint Lucia</option>
+    <option value="MF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/mf.svg" data-description="Description for Saint Martin">Saint Martin</option>
+    <option value="PM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/pm.svg" data-description="Description for Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+    <option value="VC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/vc.svg" data-description="Description for Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+    <option value="WS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ws.svg" data-description="Description for Samoa">Samoa</option>
+    <option value="SM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sm.svg" data-description="Description for San Marino">San Marino</option>
+    <option value="ST" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/st.svg" data-description="Description for Sao Tome and Principe">Sao Tome and Principe</option>
+    <option value="SA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sa.svg" data-description="Description for Saudi Arabia">Saudi Arabia</option>
+    <option value="SN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sn.svg" data-description="Description for Senegal">Senegal</option>
+    <option value="RS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/rs.svg" data-description="Description for Serbia">Serbia</option>
+    <option value="SC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sc.svg" data-description="Description for Seychelles">Seychelles</option>
+    <option value="SL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sl.svg" data-description="Description for Sierra Leone">Sierra Leone</option>
+    <option value="SG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sg.svg" data-description="Description for Singapore">Singapore</option>
+    <option value="SX" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sx.svg" data-description="Description for Sint Maarten">Sint Maarten</option>
+    <option value="SK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sk.svg" data-description="Description for Slovakia">Slovakia</option>
+    <option value="SI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/si.svg" data-description="Description for Slovenia">Slovenia</option>
+    <option value="SB" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sb.svg" data-description="Description for Solomon Islands">Solomon Islands</option>
+    <option value="SO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/so.svg" data-description="Description for Somalia">Somalia</option>
+    <option value="ZA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/za.svg" data-description="Description for South Africa">South Africa</option>
+    <option value="GS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gs.svg" data-description="Description for South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+    <option value="SS" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ss.svg" data-description="Description for South Sudan">South Sudan</option>
+    <option value="ES" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/es.svg" data-description="Description for Spain">Spain</option>
+    <option value="LK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/lk.svg" data-description="Description for Sri Lanka">Sri Lanka</option>
+    <option value="SD" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sd.svg" data-description="Description for Sudan">Sudan</option>
+    <option value="SR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sr.svg" data-description="Description for Suriname">Suriname</option>
+    <option value="SJ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sj.svg" data-description="Description for Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+    <option value="SZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sz.svg" data-description="Description for Swaziland">Swaziland</option>
+    <option value="SE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/se.svg" data-description="Description for Sweden">Sweden</option>
+    <option value="CH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ch.svg" data-description="Description for Switzerland">Switzerland</option>
+    <option value="SY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/sy.svg" data-description="Description for Syrian Arab Republic">Syrian Arab Republic</option>
+    <option value="TW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tw.svg" data-description="Description for Taiwan, Province of China">Taiwan, Province of China</option>
+    <option value="TJ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tj.svg" data-description="Description for Tajikistan">Tajikistan</option>
+    <option value="TZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tz.svg" data-description="Description for Tanzania, United Republic of">Tanzania, United Republic of</option>
+    <option value="TH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/th.svg" data-description="Description for Thailand">Thailand</option>
+    <option value="TL" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tl.svg" data-description="Description for Timor-Leste">Timor-Leste</option>
+    <option value="TG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tg.svg" data-description="Description for Togo">Togo</option>
+    <option value="TK" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tk.svg" data-description="Description for Tokelau">Tokelau</option>
+    <option value="TO" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/to.svg" data-description="Description for Tonga">Tonga</option>
+    <option value="TT" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tt.svg" data-description="Description for Trinidad and Tobago">Trinidad and Tobago</option>
+    <option value="TN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tn.svg" data-description="Description for Tunisia">Tunisia</option>
+    <option value="TR" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tr.svg" data-description="Description for Turkey">Turkey</option>
+    <option value="TM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tm.svg" data-description="Description for Turkmenistan">Turkmenistan</option>
+    <option value="TC" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tc.svg" data-description="Description for Turks and Caicos Islands">Turks and Caicos Islands</option>
+    <option value="TV" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/tv.svg" data-description="Description for Tuvalu">Tuvalu</option>
+    <option value="UG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ug.svg" data-description="Description for Uganda">Uganda</option>
+    <option value="UA" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ua.svg" data-description="Description for Ukraine">Ukraine</option>
+    <option value="AE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ae.svg" data-description="Description for United Arab Emirates">United Arab Emirates</option>
+    <option value="GB" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/gb.svg" data-description="Description for United Kingdom">United Kingdom</option>
+    <option value="US" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/us.svg" data-description="Description for United States">United States</option>
+    <option value="UM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/um.svg" data-description="Description for United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+    <option value="UY" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/uy.svg" data-description="Description for Uruguay">Uruguay</option>
+    <option value="UZ" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/uz.svg" data-description="Description for Uzbekistan">Uzbekistan</option>
+    <option value="VU" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/vu.svg" data-description="Description for Vanuatu">Vanuatu</option>
+    <option value="VE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ve.svg" data-description="Description for Venezuela">Venezuela</option>
+    <option value="VN" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/vn.svg" data-description="Description for Viet Nam">Viet Nam</option>
+    <option value="VG" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/vg.svg" data-description="Description for Virgin Islands, British">Virgin Islands, British</option>
+    <option value="VI" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/vi.svg" data-description="Description for Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+    <option value="WF" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/wf.svg" data-description="Description for Wallis and Futuna">Wallis and Futuna</option>
+    <option value="EH" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/eh.svg" data-description="Description for Western Sahara">Western Sahara</option>
+    <option value="YE" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/ye.svg" data-description="Description for Yemen">Yemen</option>
+    <option value="ZM" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/zm.svg" data-description="Description for Zambia">Zambia</option>
+    <option value="ZW" data-imagesrc="https://github.com/lipis/flag-icons/raw/main/flags/4x3/zw.svg" data-description="Description for Zimbabwe">Zimbabwe</option>
+</select>
+</div>
+</div>
+  
+  
+  <script>
+$(document).ready(function () {    
+
+    //Make it slick!
+    $('#make-it-slick').on('click', function(){
+        $('#demo-htmlselect').ddslick();
+    });
+    //Restore Original
+    $('#restore').on('click', function(){
+        $('#demo-htmlselect').ddslick('destroy');
+    });
+    
+    
+    $('#country').ddslick();
+
+    
+});
+  </script>
+  </body>
+</html>
